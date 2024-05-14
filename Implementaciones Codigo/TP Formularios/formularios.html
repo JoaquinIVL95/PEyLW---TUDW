@@ -12,8 +12,8 @@
     <form action=""><u>Ingrese sus datos</u><br><br>
         <input type="text" placeholder="nombre y Apellido" maxlength="40"> <br>
         <p>Es Mayor de edad?</p>
-        <input id="si" type="radio" checked ><label for="si">Si</label>
-        <input id="No" type="radio" ><label for="No">No</label><br><br>
+        <input id="si" name="mayor" type="radio" checked ><label for="si">Si</label>
+        <input id="No" name="mayor" type="radio" ><label for="No">No</label><br><br>
         <input type="number" name="" id="" placeholder="Edad" maxlength="3"><br><br>
         <input type="number" placeholder="DNI" maxlength="8"><br><br>
         <input type="number" placeholder="Telefono" value="299" maxlength="8"><br><br>
@@ -86,41 +86,70 @@
     <hr>
 
     <h3 align="center">Formulario con Tablas</h3>
-
-    <table border="2" width="100%">
-        <tr>
-            <th width="50%">Name</th>
-            <th >Value</th>
-        </tr>
-
-        <tr>
-            <td>Name</td>
-            <td><input type="text"  size="30"></td>
-        </tr>
-
-        <tr>
-            <td>Sex</td>
-            <td>
-                <input id="male" type="radio"><label for="male">Male</label><br>
-                <input id="male" type="radio"><label for="male">Male</label>
-            </td>            
-        </tr>
-
-        <tr>
-            <td>Eye Color</td>
-            <td>
-                <select name="eye_color" id="eye_color">
-                    <option selected value="default">Colors...</option>
-                    <option value="blue">Blue</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Red">Red</option>
-                    <option value="Green">Green</option>
-                </select>
-            </td>
-        </tr>
-    </table>
-
-    <br><br><br>
-    <hr>
-</body>
+    <form action="">
+        <table align="center" border="2" width="300">
+            <tr>
+                <th width="50%">Name</th>
+                <th >Value</th>
+            </tr>
+            
+            <tr>
+                <td>Name</td>
+                <td><input type="text"  size="30"></td>
+            </tr>
+            
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+            
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </td>            
+            </tr>
+            
+            <tr>
+                <td>Eye Color</td>
+                <td>
+                    <select name="eye_color" id="eye_color">
+                        <option selected value="default">Colors...</option>
+                        <option value="blue">Blue</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <input type="checkbox" id="altura"><label for="altura">Over 6 feet tall</label><br>
+                    <input type="checkbox" id="peso"><label for="peso">Over 200 pounds</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">Describe your athletic ability:</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <textarea name="descripcion" id="descripcion" rows="6" cols="50"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="Enter my infomation">
+                </th>
+            </tr>
+        </table>
+    </form>
+        
+        <br><br><br>
+        <hr>
+        
+    </body>
 </html>
