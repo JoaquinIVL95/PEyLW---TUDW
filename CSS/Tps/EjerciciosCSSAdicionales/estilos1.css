@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.top{
+
+    max-width: 100%;
+    background-color: grey;
+    border: 5px double white;
+    height: 5em;
+    margin: 10px;
+    
+}
+
+.columna {
+    float: left; /* Usa float para alinear las columnas */
+    height: 100vh;
+    max-width: 100%;
+    margin-top: 20px;
+    margin: 6px;
+    /* line-height: 1000px; */
+}
+.izquierda {
+    width: 20%; /* Ancho del 20% para la columna izquierda */
+    background-color: #f0f0f0; /* Color de fondo para visualizar la columna izquierda */
+    border: 2px solid black;
+    margin-right: 5%;
+}
+.centro {
+    width: 45%; /* Ancho del 60% para la columna central */
+    background-color: #e0e0e0; /* Color de fondo para visualizar la columna central */
+    border: 2px solid black;
+}
+.derecha {
+    width: 20%; /* Ancho del 20% para la columna derecha */
+    background-color: #f0f0f0; /* Color de fondo para visualizar la columna derecha */
+    border: 2px solid black;
+    margin-left: 5%;
+}
+.clear {
+    clear: both; /* Clear para limpiar floats */
+}
